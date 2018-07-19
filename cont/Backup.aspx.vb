@@ -11,6 +11,7 @@ Namespace MySqlBackupWebSample
         Protected Sub Page_Load(sender As Object, e As EventArgs)
             If Session("connectionstring") Is Nothing Then
                 Response.Redirect("~/Default.aspx")
+
             End If
         End Sub
     End Class

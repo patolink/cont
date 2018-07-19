@@ -78,7 +78,9 @@
       <HintPath>..\..\..\..\..\Program Files (x86)\Telerik\UI for ASP.NET AJAX Q2 2016\Bin40\Telerik.Web.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Nomina\" />
+  </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
@@ -117,8 +119,14 @@
     <Content Include="bin\Telerik.Web.UI.xml" />
     <Content Include="bootstrap\css\bootstrap-responsive.css" />
     <Content Include="bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="bootstrap\css\bootstrap.css" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\font-awesome.min.css" />
+    <Content Include="bootstrap\css\metisMenu.min.css" />
+    <Content Include="bootstrap\css\morris.css" />
+    <Content Include="bootstrap\css\startmin.css" />
+    <Content Include="bootstrap\css\timeline.css" />
     <Content Include="bootstrap\img\glyphicons-halflings-white.png" />
     <Content Include="bootstrap\img\glyphicons-halflings.png" />
     <Content Include="bootstrap\js\bootstrap.js" />
@@ -142,6 +150,9 @@
     <Content Include="EmpresaRep.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\bg-input-focus.png" />
+    <Content Include="images\bg-input.png" />
+    <Content Include="images\sprite.png" />
     <Content Include="index.html" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\dataTables\dataTables.bootstrap.min.js" />
@@ -173,6 +184,12 @@
     <Content Include="js\startmin.js" />
     <Content Include="login.aspx" />
     <Content Include="menu.aspx" />
+    <Content Include="obj\Debug\cont.dll" />
+    <Content Include="obj\Debug\cont.dll.licenses" />
+    <Content Include="obj\Debug\cont.pdb" />
+    <Content Include="obj\Debug\cont.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\cont.xml" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
     <Content Include="pages\blank.html" />
     <Content Include="pages\buttons.html" />
     <Content Include="pages\flot.html" />
@@ -285,6 +302,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\cont.Resources.resources" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="composer.json" />
@@ -311,6 +329,12 @@
     </None>
     <Content Include="Site1.Master" />
     <Content Include="packages.config" />
+    <Content Include="obj\Debug\cont.vbproj.CopyComplete" />
+    <Content Include="obj\Debug\cont.vbproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\cont.vbproj.GenerateResource.cache" />
+    <Content Include="obj\Debug\cont.vbprojAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\cont.vbproj.CoreCompileInputs.cache" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

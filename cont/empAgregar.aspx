@@ -16,10 +16,16 @@
                                             <div class="form-group">
                                                 <label>DEPTO:</label>
 
-                                         <div class="form-group">        
-<telerik:RadComboBox ID="rcbDepto" class="form-control" runat="server"></telerik:RadComboBox></div> 
-                                                
-                                            </div>
+                                  
+
+
+                                                  <div class="form-group">  
+                                                  <asp:DropDownList ID="rcbDepto" class="form-control" runat="server"></asp:DropDownList>
+</div> </div>
+
+                                         
+                                          
+
                                             <div class="form-group">
                                                 <label>PATERNO:</label>
                                                 <div class="form-group">
@@ -52,6 +58,12 @@
                                                     </div> 
                                             </div>
                                          <div class="form-group">
+                                                <label>NO INTERIOR:</label>
+                                                  <div class="form-group">
+                                                <asp:TextBox ID="txtnoInterior" class="form-control" runat="server"></asp:TextBox>
+                                                    </div> 
+                                            </div>
+                                         <div class="form-group">
                                                 <label>COLONIA:</label>
                                                   <div class="form-group">
                                                 <asp:TextBox ID="txtColonia" class="form-control" runat="server"></asp:TextBox>
@@ -61,6 +73,12 @@
                                                 <label>LOCALIDAD:</label>
                                                   <div class="form-group">
                                                 <asp:TextBox ID="txtLocalidad" class="form-control" runat="server"></asp:TextBox>
+                                                    </div> 
+                                            </div>
+                                        <div class="form-group">
+                                                <label>REFERENCIA:</label>
+                                                  <div class="form-group">
+                                                <asp:TextBox ID="txtreferencia" class="form-control" runat="server"></asp:TextBox>
                                                     </div> 
                                             </div>
                                          <div class="form-group">
@@ -85,6 +103,19 @@
                                                 <label>C.P:</label>
                                                   <div class="form-group">
                                                 <asp:TextBox ID="txtCP" class="form-control" runat="server"></asp:TextBox>
+                                                    </div> 
+                                            </div>
+
+                                         <div class="form-group">
+                                                <label>TELEFONOS:</label>
+                                                  <div class="form-group">
+                                                <asp:TextBox ID="txtTelefonos" class="form-control" runat="server"></asp:TextBox>
+                                                    </div> 
+                                            </div>
+                                         <div class="form-group">
+                                                <label>E-MAIL:</label>
+                                                  <div class="form-group">
+                                                <asp:TextBox ID="txtemail" class="form-control" runat="server"></asp:TextBox>
                                                     </div> 
                                             </div>
                                          <div class="form-group">
@@ -116,7 +147,9 @@
                                          <div class="form-group">
                                                 <label>INFONAVIT:</label>
                                                   <div class="form-group">
-<telerik:RadComboBox ID="rcbInfonavit" class="form-control" runat="server"></telerik:RadComboBox>
+                                                       <asp:DropDownList ID="rcbInfonavit" class="form-control" Width="100px" runat="server"></asp:DropDownList>
+
+<asp:TextBox ID="txtInfoNum" class="form-control" Width="60px" runat="server"></asp:TextBox>
                                                
                                                     </div> 
                                             </div>
@@ -125,8 +158,9 @@
                                          <div class="form-group">
                                                 <label>AGUINALDO:</label>
                                                   <div class="form-group">
-                                              <telerik:RadComboBox ID="rcbAguinaldo" class="form-control" runat="server"></telerik:RadComboBox>
-                                                    </div> 
+                                                        <asp:DropDownList ID="rcbAguinaldo" class="form-control" Width="100px" runat="server"></asp:DropDownList>
+                                             <asp:TextBox ID="txtAguinaldoNum" class="form-control" Width="60px" runat="server"></asp:TextBox>
+                                                  </div> 
                                             </div>
                                             
                                                
@@ -152,13 +186,13 @@
                              <div class="form-group">
                                                 <label>SEXO:</label>
                                                   <div class="form-group">
-
-                                                        <telerik:RadComboBox ID="rcbSexo" class="form-control" runat="server">
-                                                            <Items>
-                                                                <telerik:RadComboBoxItem runat="server" Text="M" Value="M" />
-                                                                <telerik:RadComboBoxItem runat="server" Text="F" Value="F" />
-                                                            </Items>
-                                                        </telerik:RadComboBox>
+                                                      <asp:DropDownList ID="rcbSexo" class="form-control" runat="server">
+                                                          <asp:ListItem>M</asp:ListItem>
+                                                          <asp:ListItem>F</asp:ListItem>
+                                                      </asp:DropDownList>
+                                                     
+                                                      
+                                                   
                                                     </div> 
                                             </div>
 
@@ -171,29 +205,37 @@
                              <div class="form-group">
                                                 <label>SAT REGIMEN:</label>
                                                   <div class="form-group">
-                                                <asp:TextBox ID="TextBox23" class="form-control" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="txtSatRegi" class="form-control" runat="server"></asp:TextBox>
                                                     </div> 
                                             </div>
                              <div class="form-group">
                                                 <label>SAT CONTRATO:</label>
                                                   <div class="form-group">
-                                                <asp:TextBox ID="TextBox24" class="form-control" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="txtSatContrato" class="form-control" runat="server"></asp:TextBox>
                                                     </div> 
                                             </div>
 
                              <div class="form-group">
                                                 <label>SAT JORNADA:</label>
                                                   <div class="form-group">
-                                                <asp:TextBox ID="TextBox25" class="form-control" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="txtSatJornada" class="form-control" runat="server"></asp:TextBox>
                                                     </div> 
                                             </div>
                              <div class="form-group">
                                                 <label>OCUPACION:</label>
                                                   <div class="form-group">
-                                                <asp:TextBox ID="TextBox26" class="form-control" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="txtOcupacion" class="form-control" runat="server" Width="131px"></asp:TextBox>
                                                     </div> 
                                             </div>
-<asp:Button ID="btnSubmit" class="btn btn-default" runat="server" Text="Agregar" />
+
+                                           <div class="form-group">
+                                              
+                                                  <asp:CheckBox ID="chkDeclara" class="form-control"  runat="server" Text=" NO DECLARA?" />
+                                                 <asp:CheckBox ID="chkasimilado" class="form-control"  runat="server" Text=" A SIMILADO?" />
+                                               <asp:CheckBox ID="chkSindicaliado" class="form-control"  runat="server" Text=" SINDICALIZADO?" />
+                                            </div>
+
+<asp:Button ID="btnSubmit" class="btn btn-default" runat="server" Text="SAVE" />
                                         <asp:Button ID="btnReset" class="btn btn-default" runat="server" Text="Borrar" />
                                           
                                           

@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class empAgregar
-
+    
     '''<summary>
     '''rcbDepto control.
     '''</summary>
@@ -20,8 +20,8 @@ Partial Public Class empAgregar
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rcbDepto As Global.Telerik.Web.UI.RadComboBox
-
+    Protected WithEvents rcbDepto As Global.System.Web.UI.WebControls.DropDownList
+    
     '''<summary>
     '''txtPaterno control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPaterno As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtMaterno control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtMaterno As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtNombre control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNombre As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtCalle control.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtCalle As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtnoExterior control.
     '''</summary>
@@ -66,7 +66,16 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtnoExterior As Global.System.Web.UI.WebControls.TextBox
-
+    
+    '''<summary>
+    '''txtnoInterior control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtnoInterior As Global.System.Web.UI.WebControls.TextBox
+    
     '''<summary>
     '''txtColonia control.
     '''</summary>
@@ -75,7 +84,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtColonia As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtLocalidad control.
     '''</summary>
@@ -84,7 +93,16 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtLocalidad As Global.System.Web.UI.WebControls.TextBox
-
+    
+    '''<summary>
+    '''txtreferencia control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtreferencia As Global.System.Web.UI.WebControls.TextBox
+    
     '''<summary>
     '''txtMunicipio control.
     '''</summary>
@@ -93,7 +111,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtMunicipio As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtEstado control.
     '''</summary>
@@ -102,7 +120,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtEstado As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtPais control.
     '''</summary>
@@ -111,7 +129,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPais As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtCP control.
     '''</summary>
@@ -120,7 +138,25 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtCP As Global.System.Web.UI.WebControls.TextBox
-
+    
+    '''<summary>
+    '''txtTelefonos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtTelefonos As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtemail control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtemail As Global.System.Web.UI.WebControls.TextBox
+    
     '''<summary>
     '''rxrRFC control.
     '''</summary>
@@ -129,7 +165,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rxrRFC As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtIMSS control.
     '''</summary>
@@ -138,7 +174,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtIMSS As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtCurp control.
     '''</summary>
@@ -147,7 +183,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtCurp As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtNacimiento control.
     '''</summary>
@@ -156,7 +192,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNacimiento As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''rcbInfonavit control.
     '''</summary>
@@ -164,8 +200,17 @@ Partial Public Class empAgregar
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rcbInfonavit As Global.Telerik.Web.UI.RadComboBox
-
+    Protected WithEvents rcbInfonavit As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''txtInfoNum control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtInfoNum As Global.System.Web.UI.WebControls.TextBox
+    
     '''<summary>
     '''rcbAguinaldo control.
     '''</summary>
@@ -173,8 +218,17 @@ Partial Public Class empAgregar
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rcbAguinaldo As Global.Telerik.Web.UI.RadComboBox
-
+    Protected WithEvents rcbAguinaldo As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''txtAguinaldoNum control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtAguinaldoNum As Global.System.Web.UI.WebControls.TextBox
+    
     '''<summary>
     '''txtSalario control.
     '''</summary>
@@ -183,7 +237,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtSalario As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtIndice control.
     '''</summary>
@@ -192,7 +246,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtIndice As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtIntegrado control.
     '''</summary>
@@ -201,7 +255,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtIntegrado As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''rcbSexo control.
     '''</summary>
@@ -209,8 +263,8 @@ Partial Public Class empAgregar
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rcbSexo As Global.Telerik.Web.UI.RadComboBox
-
+    Protected WithEvents rcbSexo As Global.System.Web.UI.WebControls.DropDownList
+    
     '''<summary>
     '''txtBanco control.
     '''</summary>
@@ -219,43 +273,70 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtBanco As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
-    '''TextBox23 control.
+    '''txtSatRegi control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox23 As Global.System.Web.UI.WebControls.TextBox
-
+    Protected WithEvents txtSatRegi As Global.System.Web.UI.WebControls.TextBox
+    
     '''<summary>
-    '''TextBox24 control.
+    '''txtSatContrato control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox24 As Global.System.Web.UI.WebControls.TextBox
-
+    Protected WithEvents txtSatContrato As Global.System.Web.UI.WebControls.TextBox
+    
     '''<summary>
-    '''TextBox25 control.
+    '''txtSatJornada control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox25 As Global.System.Web.UI.WebControls.TextBox
-
+    Protected WithEvents txtSatJornada As Global.System.Web.UI.WebControls.TextBox
+    
     '''<summary>
-    '''TextBox26 control.
+    '''txtOcupacion control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox26 As Global.System.Web.UI.WebControls.TextBox
-
+    Protected WithEvents txtOcupacion As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''chkDeclara control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkDeclara As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''chkasimilado control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkasimilado As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''chkSindicaliado control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkSindicaliado As Global.System.Web.UI.WebControls.CheckBox
+    
     '''<summary>
     '''btnSubmit control.
     '''</summary>
@@ -264,7 +345,7 @@ Partial Public Class empAgregar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSubmit As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''btnReset control.
     '''</summary>

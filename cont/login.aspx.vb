@@ -33,15 +33,20 @@ Public Class login1
                 Response.Redirect("Menu.aspx")
 
             Else
-                Panelmsg.BackColor = Drawing.Color.Gray
-                Me.LbMensaje.Text = _message
-                Me.LbMensaje.ForeColor = Drawing.Color.White
+                'Panelmsg.BackColor = Drawing.Color.Gray
+                Me.lbmessage.Text = _message
+                'Me.LbMensaje.ForeColor = Drawing.Color.White
+                'lbmessage.Text = _message
 
             End If
 
 
         Catch ex As Exception
 
+            'lbmessage.Text = ex.Message
+            'Panelmsg.BackColor = Drawing.Color.Red
+            Me.lbmessage.Text = ex.Message
+            'Me.LbMensaje.ForeColor = Drawing.Color.White
         End Try
     End Sub
 
@@ -74,6 +79,7 @@ Public Class login1
             End With
         Catch ex As MySqlException
             Throw ex
+
         End Try
         'Return retorno
     End Function

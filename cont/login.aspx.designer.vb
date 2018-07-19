@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class login1
-
+    
     '''<summary>
     '''form1 control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class login1
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-
+    
     '''<summary>
     '''txtLogin control.
     '''</summary>
@@ -30,25 +30,16 @@ Partial Public Class login1
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtLogin As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
-    '''Panelmsg control.
+    '''lbmessage control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Panelmsg As Global.System.Web.UI.WebControls.Panel
-
-    '''<summary>
-    '''LbMensaje control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents LbMensaje As Global.System.Web.UI.WebControls.Label
-
+    Protected WithEvents lbmessage As Global.System.Web.UI.WebControls.Label
+    
     '''<summary>
     '''btnLogin control.
     '''</summary>

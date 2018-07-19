@@ -94,6 +94,7 @@ zoom:1
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: width .6s ease;
+    
     -moz-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease;
