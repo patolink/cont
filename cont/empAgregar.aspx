@@ -64,6 +64,12 @@
                                                     </div> 
                                             </div>
                                          <div class="form-group">
+                                                <label>DIRECCION:</label>
+                                                  <div class="form-group">
+                                                <asp:TextBox ID="txtdireccion" class="form-control" runat="server"></asp:TextBox>
+                                                    </div> 
+                                            </div>
+                                         <div class="form-group">
                                                 <label>COLONIA:</label>
                                                   <div class="form-group">
                                                 <asp:TextBox ID="txtColonia" class="form-control" runat="server"></asp:TextBox>
@@ -107,9 +113,13 @@
                                             </div>
 
                                          <div class="form-group">
-                                                <label>TELEFONOS:</label>
+                                                <label>TELEFONO 1:</label>
                                                   <div class="form-group">
-                                                <asp:TextBox ID="txtTelefonos" class="form-control" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="txttelefono1" class="form-control" runat="server"></asp:TextBox>
+                                                    </div> 
+                                             <label>TELEFONO 1:</label>
+                                                  <div class="form-group">
+                                                <asp:TextBox ID="txttelefono2" class="form-control" runat="server"></asp:TextBox>
                                                     </div> 
                                             </div>
                                          <div class="form-group">
@@ -139,7 +149,11 @@
                                          <div class="form-group">
                                                 <label>NACIMIENTO:</label>
                                                   <div class="form-group">
-                                                <asp:TextBox ID="txtNacimiento" class="form-control" runat="server"></asp:TextBox>
+
+<telerik:RadDatePicker ID="txtNacimiento" class="form-control"  DateInput-DateInput-DisplayDateFormat="yyyy-dd-MM" DateInput-DateFormat="yyyy-dd-MM"  runat="server" MinDate="1900-01-01">
+  
+</telerik:RadDatePicker>
+                                               
                                                     </div> 
                                             </div>
                                             
@@ -187,8 +201,8 @@
                                                 <label>SEXO:</label>
                                                   <div class="form-group">
                                                       <asp:DropDownList ID="rcbSexo" class="form-control" runat="server">
-                                                          <asp:ListItem>M</asp:ListItem>
-                                                          <asp:ListItem>F</asp:ListItem>
+                                                          <asp:ListItem>MAS</asp:ListItem>
+                                                          <asp:ListItem>FEM</asp:ListItem>
                                                       </asp:DropDownList>
                                                      
                                                       
@@ -199,7 +213,10 @@
                              <div class="form-group">
                                                 <label>BANCO:</label>
                                                   <div class="form-group">
-                                                <asp:TextBox ID="txtBanco" class="form-control" runat="server"></asp:TextBox>
+
+                                                        <asp:DropDownList ID="txtBanco" class="form-control" runat="server"></asp:DropDownList>
+
+                                                <%--<asp:TextBox ID="txtBanco" class="form-control" runat="server"></asp:TextBox>--%>
                                                     </div> 
                                             </div>
                              <div class="form-group">

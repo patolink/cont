@@ -17,7 +17,8 @@ Public Class Site1
             End If
 
             aLoginName(Session("user"))
-            lbUser.Text = _result.ToString
+            lbuser.Text = _result.ToString
+            Session("nombre") = _result.ToString
 
         Else
 

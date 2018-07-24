@@ -77,6 +77,15 @@ Partial Public Class empAgregar
     Protected WithEvents txtnoInterior As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
+    '''txtdireccion control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtdireccion As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
     '''txtColonia control.
     '''</summary>
     '''<remarks>
@@ -140,13 +149,22 @@ Partial Public Class empAgregar
     Protected WithEvents txtCP As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''txtTelefonos control.
+    '''txttelefono1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtTelefonos As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txttelefono1 As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txttelefono2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txttelefono2 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''txtemail control.
@@ -191,7 +209,7 @@ Partial Public Class empAgregar
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtNacimiento As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtNacimiento As Global.Telerik.Web.UI.RadDatePicker
     
     '''<summary>
     '''rcbInfonavit control.
@@ -272,7 +290,7 @@ Partial Public Class empAgregar
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtBanco As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtBanco As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''txtSatRegi control.
