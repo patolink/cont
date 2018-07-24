@@ -234,7 +234,7 @@ Public Class empAgregar
 
 
 
-                Emp_add(rcbDepto.SelectedItem.Value, txtPaterno.Text, txtMaterno.Text, txtNombre.Text, sNombreCompleto.ToUpper, txtCalle.Text, txtnoExterior.Text, txtnoInterior.Text,
+                Emp_add(rcbDepto.SelectedItem.Value, txtPaterno.Text, txtMaterno.Text, txtNombre.Text, sNombreCompleto.ToUpper, txtCalle.Text, txtnoExterior.Text, txtnoInterior.Text, txtdireccion.Text,
                         txtColonia.Text, txtLocalidad.Text, txtreferencia.Text, txtMunicipio.Text, txtEstado.Text, txtPais.Text, txtCP.Text, txttelefono1.Text, txttelefono2.Text, txtemail.Text, rxrRFC.Text, txtIMSS.Text, txtCurp.Text,
 dateNac, rcbInfonavit.SelectedItem.Text, txtInfoNum.Text, rcbAguinaldo.SelectedItem.Text, txtAguinaldoNum.Text, txtSalario.Text, txtIndice.Text, txtIntegrado.Text, rcbSexo.SelectedItem.Value, txtBanco.SelectedItem.Value, txtSatRegi.Text, txtSatContrato.Text, txtSatJornada.Text, txtOcupacion.Text, cDeclara, cAsimilada, cSindicalizado, Session("nombre").ToString)
 
@@ -285,7 +285,7 @@ dateNac, rcbInfonavit.SelectedItem.Text, txtInfoNum.Text, rcbAguinaldo.SelectedI
     End Function
 
 
-    Public Function Emp_add(ByVal Depto As Integer, ByVal Paterno As String, ByVal Materno As String, ByVal Nombre As String, ByVal Name As String, ByVal Calle As String, ByVal noExterior As String, ByVal noInterior As String, ByVal Colonia As String, ByVal Localidad As String, ByVal referencia As String, ByVal Municipio As String, ByVal Estado As String, ByVal Pais As String, ByVal CP As String, ByVal TEL1 As String, ByVal TEL2 As String, ByVal MAIL As String, ByVal RFC As String, ByVal IMSS As String, ByVal CURP As String, ByVal NACIMIENTO As String, ByVal INFONAVIT As String, ByVal INFONAVITNUM As Integer, ByVal AGUINALDO As String, ByVal AGUINALDONUM As String, ByVal SALARIO As String, ByVal INDICE As String, ByVal INTEGRADO As String, ByVal SEXO As String, ByVal BANCO As Integer, ByVal SATREGI As String, ByVal SATCONTRATO As String, ByVal SATJORNADA As String, ByVal OCUPACION As String, ByVal DECLARA As Integer, ByVal ASIMILADO As Integer, ByVal SINDICALIZADO As Integer, ByVal USUARIO As String) As DataSet
+    Public Function Emp_add(ByVal Depto As Integer, ByVal Paterno As String, ByVal Materno As String, ByVal Nombre As String, ByVal Name As String, ByVal Calle As String, ByVal noExterior As String, ByVal noInterior As String, ByVal direccion As String, ByVal Colonia As String, ByVal Localidad As String, ByVal referencia As String, ByVal Municipio As String, ByVal Estado As String, ByVal Pais As String, ByVal CP As String, ByVal TEL1 As String, ByVal TEL2 As String, ByVal MAIL As String, ByVal RFC As String, ByVal IMSS As String, ByVal CURP As String, ByVal NACIMIENTO As String, ByVal INFONAVIT As String, ByVal INFONAVITNUM As Integer, ByVal AGUINALDO As String, ByVal AGUINALDONUM As String, ByVal SALARIO As String, ByVal INDICE As String, ByVal INTEGRADO As String, ByVal SEXO As String, ByVal BANCO As Integer, ByVal SATREGI As String, ByVal SATCONTRATO As String, ByVal SATJORNADA As String, ByVal OCUPACION As String, ByVal DECLARA As Integer, ByVal ASIMILADO As Integer, ByVal SINDICALIZADO As Integer, ByVal USUARIO As String) As DataSet
         Dim oSqlConn As MySqlConnection = New MySqlConnection()
 
         oSqlConn.ConnectionString = ConfigurationManager.AppSettings("connectionString")
@@ -304,6 +304,7 @@ dateNac, rcbInfonavit.SelectedItem.Text, txtInfoNum.Text, rcbAguinaldo.SelectedI
                 .Parameters.AddWithValue("@in_Calle", Calle)
                 .Parameters.AddWithValue("@in_noExterior", noExterior)
                 .Parameters.AddWithValue("@in_noInterior", noInterior)
+                .Parameters.AddWithValue("@in_direccion", direccion)
                 .Parameters.AddWithValue("@in_Colonia", Colonia)
                 .Parameters.AddWithValue("@in_Localidad", Localidad)
                 .Parameters.AddWithValue("@in_referencia", referencia)

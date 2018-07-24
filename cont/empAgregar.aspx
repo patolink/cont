@@ -252,7 +252,7 @@
                                                <asp:CheckBox ID="chkSindicaliado" class="form-control"  runat="server" Text=" SINDICALIZADO?" />
                                             </div>
 
-<asp:Button ID="btnSubmit" class="btn btn-default" runat="server" Text="SAVE" />
+<asp:Button ID="btnSubmit" class="btn btn-default" runat="server" Text="Guardar" />
                                         <asp:Button ID="btnReset" class="btn btn-default" runat="server" Text="Borrar" />
                                           
                                           
