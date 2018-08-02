@@ -63,6 +63,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -147,6 +148,7 @@
     <Content Include="css\timeline.css" />
     <Content Include="empAgregar.aspx" />
     <Content Include="EmpresaAgregar.aspx" />
+    <Content Include="EmpleadoList.aspx" />
     <Content Include="EmpresaRep.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -235,6 +237,13 @@
     </Compile>
     <Compile Include="EmpresaAgregar.aspx.vb">
       <DependentUpon>EmpresaAgregar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EmpleadoList.aspx.designer.vb">
+      <DependentUpon>EmpleadoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoList.aspx.vb">
+      <DependentUpon>EmpleadoList.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="EmpresaRep.aspx.designer.vb">

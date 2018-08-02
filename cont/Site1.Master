@@ -134,8 +134,19 @@
                                      <li>
                                         <a href="#">Calendario</a>
                                     </li>
-                                     <li>
-                                        <a href="empAgregar.aspx"> Agregar Empleados</a>
+                                  
+                                    <li>
+                                        <a href="#">Empleados <span class="fa arrow"></span></a>
+                                        <ul class="nav nav-third-level">
+                                            <li>
+                                                <a href="empAgregar.aspx"> Agregar Empleados</a>
+                                            </li>
+                                            <li>
+                                                <a href="EmpleadoList.aspx">Ver empleados</a>
+                                            </li>
+                                            
+                                        </ul>
+                                        <!-- /.nav-third-level -->
                                     </li>
                                      <li>
                                         <a href="#">Nomina reportes</a>
