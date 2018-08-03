@@ -30,10 +30,35 @@
                                                  
                                                    <telerik:GridBoundColumn DataField="UserNombre" FilterControlAltText="Filter UserNombre column" HeaderText="UserNombre" UniqueName="UserNombre">
                                                    </telerik:GridBoundColumn>
+                                                   <telerik:GridEditCommandColumn>
+                                                   </telerik:GridEditCommandColumn>
                                                </Columns>
 
 <EditFormSettings>
 <EditColumn UniqueName="EditCommandColumn1" FilterControlAltText="Filter EditCommandColumn1 column"></EditColumn>
+    <FormTemplate>
+        <%--<table border="0">
+                                        <tr>
+                                            <td style="text-align: right">
+                                                COLOR:</td>
+                                            <td>
+                                                <asp:TextBox ID="txtColor" runat="server" Text='<%# Eval("EmpPaterno") %>' 
+                                                    TextMode="SingleLine"></asp:TextBox>
+                                            </td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td align="right" colspan="2">
+                                                <asp:Button ID="Button2" runat="server" 
+                                                    CommandName='<%# Iif (TypeOf Container is GridEditFormInsertItem, "PerformInsert", "Update") %>' 
+                                                    Text='<%# Iif (TypeOf Container is GridEditFormInsertItem, "Insert", "Update") %>' />
+                                                &nbsp;
+                                                <asp:Button ID="btnCancel0" runat="server" CausesValidation="False" 
+                                                    CommandName="Cancel" Text="Cancel" />
+                                            </td>
+                                        </tr>
+                                    </table>--%>
+    </FormTemplate>
 </EditFormSettings>
                                            </MasterTableView>
                                         </telerik:RadGrid>   
